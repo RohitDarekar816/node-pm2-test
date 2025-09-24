@@ -19,7 +19,7 @@ module.exports = {
       ref: "origin/main",
       repo: "https://github.com/RohitDarekar816/node-pm2-test.git",
       path: "/root/rohit",
-      "post-deploy": "pm2 startOrRestart ecosystem.json --env production",
+      "post-deploy": "pm2 start ecosystem.json --env production",
     },
   },
 };
