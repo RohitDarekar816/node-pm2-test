@@ -19,7 +19,7 @@ module.exports = {
       ref: "origin/main",
       repo: "https://github.com/RohitDarekar816/node-pm2-test.git",
       path: "/root/rohit",
-      "post-deploy": "pwd",
+      "post-deploy": "sudo pm2 -v",
     },
   },
 };
