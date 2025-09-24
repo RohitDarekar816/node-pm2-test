@@ -14,15 +14,12 @@ module.exports = {
   deploy: {
     production: {
       user: "root",
-      key: "/path/to/some.pem"
-      host: "192.168.0.1",
-      ref: "origin/master",
-      repo: "GIT_REPOSITORY",
-      path: "DESTINATION_PATH",
-      "pre-deploy-local": "",
-      "post-deploy":
-        "npm install && pm2 reload ecosystem.config.js --env production",
-      "pre-setup": "",
+      key: "/home/rohitdarekar/learn/node/sshkey",
+      host: "142.93.219.250",
+      ref: "origin/main",
+      repo: "https://github.com/RohitDarekar816/node-pm2-test.git",
+      path: "/root",
+      "post-deploy": "pm2 start ecosystem.config.js",
     },
   },
 };
