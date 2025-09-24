@@ -41,7 +41,7 @@ module.exports = {
       ref: "origin/main",
       repo: "https://github.com/RohitDarekar816/node-pm2-test.git",
       path: "/root/rohit",
-      "post-deploy": "bash ~/rohit/source/deploy-debug.sh",
+      "post-deploy": "bash ~/rohit/source/deploy-fixed.sh",
       env: {
         NODE_ENV: "production"
       }
